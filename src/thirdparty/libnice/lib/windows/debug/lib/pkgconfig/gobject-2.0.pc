@@ -1,0 +1,12 @@
+prefix=D:/SourceCode/msys64/home/dijunkun/libnice-0.1.19/win_debug
+includedir=${prefix}/include
+libdir=${prefix}/lib
+
+Name: GObject
+Description: GLib Type, Object, Parameter and Signal Library
+Version: 2.64.2
+Requires: glib-2.0
+Requires.private: libffi
+Libs: -L${libdir} -lgobject-2.0
+Libs.private: -L${libdir} -lintl
+Cflags: -I${includedir}

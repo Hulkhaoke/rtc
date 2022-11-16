@@ -1,0 +1,11 @@
+prefix=D:/SourceCode/msys64/home/dijunkun/libnice-0.1.19/win_debug
+includedir=${prefix}/include
+libdir=${prefix}/lib
+
+Name: GThread
+Description: Thread support for GLib
+Version: 2.64.2
+Requires: glib-2.0
+Libs: -L${libdir} -lgthread-2.0
+Libs.private: -L${libdir} -lintl
+Cflags: -I${includedir}

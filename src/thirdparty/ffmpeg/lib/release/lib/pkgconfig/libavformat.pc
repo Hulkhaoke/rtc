@@ -1,0 +1,14 @@
+prefix=win64_shared/
+exec_prefix=${prefix}
+libdir=win64_shared//lib
+includedir=win64_shared//include
+
+Name: libavformat
+Description: FFmpeg container format library
+Version: 58.76.100
+Requires: 
+Requires.private: libavcodec >= 58.134.100, libswresample >= 3.9.100, libavutil >= 56.70.100
+Conflicts:
+Libs: -L${libdir}  -lavformat 
+Libs.private: secur32.lib ws2_32.lib
+Cflags: -I${includedir}

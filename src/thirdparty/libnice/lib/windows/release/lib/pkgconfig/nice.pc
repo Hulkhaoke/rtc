@@ -1,0 +1,14 @@
+prefix=D:/SourceCode/msys64/home/dijunkun/libnice-0.1.19/win_release
+includedir=${prefix}/include
+libdir=${prefix}/lib
+
+upnp_enabled=false
+
+Name: libnice
+Description: ICE library
+Version: 0.1.19
+Requires: gio-2.0
+Requires.private: gmodule-no-export-2.0, glib-2.0, gobject-2.0, gthread-2.0
+Libs: -L${libdir} -lnice
+Libs.private: -L${libdir} -lintl -ladvapi32 -liphlpapi -lws2_32
+Cflags: -I${includedir}/nice

@@ -1,0 +1,9 @@
+prefix=D:/SourceCode/msys64/home/dijunkun/libnice-0.1.19/win_debug
+includedir=${prefix}/include
+libdir=${prefix}/lib
+
+Name: ffi
+Description: Library supporting Foreign Function Interfaces
+Version: 3.2.9999
+Libs: -L${libdir} -lffi
+Cflags: -I${includedir}

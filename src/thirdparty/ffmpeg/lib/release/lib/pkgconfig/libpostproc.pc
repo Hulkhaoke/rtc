@@ -1,0 +1,14 @@
+prefix=win64_shared/
+exec_prefix=${prefix}
+libdir=win64_shared//lib
+includedir=win64_shared//include
+
+Name: libpostproc
+Description: FFmpeg postprocessing library
+Version: 55.9.100
+Requires: 
+Requires.private: libavutil >= 56.70.100
+Conflicts:
+Libs: -L${libdir}  -lpostproc 
+Libs.private: 
+Cflags: -I${includedir}
